@@ -1,0 +1,57 @@
+Search MS
+-Endpoints:
+1. /api/search -basic search for products/items
+2. /api/search/product/{id} -for specific product
+3. /api/search/trending -list of popular products
+4./api/search/recentlyviewed - products/items recentlyviewed by user
+5./api/search/category -search based on specific category
+6./api/search/filter :Apply filters for attributes like price range, brand
+7./api/suggestion : Provides suggestions as users type in the search bar
+
+Entity:
+Id
+Name/title
+Description
+price
+category
+brand
+availability
+ratings
+
+/api/auth/register
+
+Description: User registration endpoint.
+Functionality: Allows users to create a new account by providing necessary registration information.
+/api/auth/login
+
+Description: User login endpoint.
+Functionality: Validates user credentials and generates an authentication token upon successful login.
+/api/auth/logout
+
+Description: User logout endpoint.
+Functionality: Invalidates the user's authentication token, logging them out of the system.
+/api/auth/user/{id}
+
+Description: Get user information by ID.
+Functionality: Retrieves detailed information about a specific user based on their ID.
+/api/auth/update
+
+Description: Update user profile information.
+Functionality: Allows users to update their profile information, such as username, email, or password.
+/api/auth/reset-password
+
+Description: Request a password reset.
+Functionality: Initiates the process for users to reset their password by sending a reset link or token.
+/api/auth/validate-token
+
+Description: Validate user authentication token.
+Functionality: Verifies the validity of a user's authentication token.
+Entity:
+User ID: Unique identifier for each user.
+Username: The username chosen by the user.
+Email: User's email address.
+Password: Securely stored user password (hashed).
+Token: Authentication token issued upon successful login.
+Profile Information: Additional information about the user, such as name, address, etc.
+Reset Token: Token generated for password reset requests.
+Role/Roles: User roles defining permissions (e.g., regular user, admin).
